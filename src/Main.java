@@ -34,6 +34,7 @@ public class Main {
     private static void task2() {
         System.out.println(" decision 1");
         List<Integer> comparativeList =  new ArrayList<>(nums);
+//        comparativeList.addAll(nums);
         Collections.sort(comparativeList);
         int comparativeElement = Integer.MIN_VALUE;
         for (Integer e : comparativeList) {
@@ -53,6 +54,7 @@ public class Main {
 
     private static void task3() {
         Set<String> nameWord = new HashSet<>(words);
+//        nameWord.addAll(words);
         System.out.println(nameWord);
         for (String e : nameWord) {
             System.out.print(e + " , ");
@@ -61,6 +63,7 @@ public class Main {
 
     private static void task4() {
         Set<String> nameWord = new HashSet<>(words);
+//        nameWord.addAll(words);
         System.out.println("количество дубликатов = " + (words.size() - nameWord.size()));
 
     }
